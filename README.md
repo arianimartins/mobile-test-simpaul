@@ -17,7 +17,7 @@ A proposta deste projeto é criar um App para listar os personagens da marvel e 
   - Implemente seu App seguindo as melhores práticas de arquitetura e design patterns.
   - Utilize as libs que ache necessário na implementação do seu app.
   - Detalhe no README.md as informações necessárias para que podamos avaliar seu teste.
-  - Para realizar o teste faça um Fork do repositório e crie um branch com seu nome-sobrenome. Quando terminar faça um PullRequest. 
+  - Para realizar o teste faça um Fork do repositório e trabalhe no branch com seu nome-sobrenome. Quando terminar faça um PullRequest deste branch. 
 
 ## Prazo para entrega
   Você terá 3 dias a partir do recebimento do email para entregar o seu App.
