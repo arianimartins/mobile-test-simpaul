@@ -1,6 +1,6 @@
 # Teste para Engenheiro de Software Mobile
 
-A proposta deste projeto é criar um App para listar os personagens da marvel e ao selecioná-los conseguir vizualizar uma tela com a descrição do personagem. Você poderá implementar seu App em IOS(swift)/Android(Kotlin)/Flutter(Dart), dependendo da tecnología selecionada você deverá aplicar uma das seguintes Arquiteturas MVVM/MVP/BLoC. Para implementar o seu App você deverá criar uma conta e gerar uma chave de acesso na API. Seguem os detalhes da API.
+A proposta deste projeto é criar um App para listar os personagens da marvel e ao selecioná-los conseguir vizualizar uma tela com a descrição do personagem. Você poderá implementar seu App em IOS(swift)/Android(Kotlin/Java)/Flutter(Dart). Para implementar o seu App você deverá criar uma conta e gerar uma chave de acesso na API. Seguem os detalhes da API.
 
 ## Detalhes API
   - [Site da API](https://developer.marvel.com/documentation/getting_started)
