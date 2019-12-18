@@ -20,4 +20,4 @@ A proposta deste projeto é criar um App para listar os personagens da marvel e 
   - Para realizar o teste faça um Fork do repositório e trabalhe no branch com seu nome-sobrenome. Quando terminar faça um PullRequest deste branch. 
 
 ## Prazo para entrega
-  Você terá 3 dias a partir do recebimento do email para entregar o seu App.
+  Você terá 4 dias a partir do recebimento do email para entregar o seu App.
