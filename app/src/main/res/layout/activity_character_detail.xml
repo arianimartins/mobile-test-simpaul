@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CharacterDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fitsSystemWindows="false"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                android:gravity="center_vertical"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/scroll_detail"
+        android:clipToPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cover_img"
+                android:transitionName="charimage"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/txt_char_desc"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/msg_no_desc"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:textColor="@color/textLight"
+                android:text="@string/no_content_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="18sp"
+                android:text="@string/title_comics"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/msg_no_comics"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:textColor="@color/textLight"
+                android:text="@string/no_content_comics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="16dp"
+                android:id="@+id/comics_list"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="@string/title_series"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/msg_no_series"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:textColor="@color/textLight"
+                android:text="@string/no_content_series"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/series_list"
+                android:padding="16dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="@string/title_stories"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/msg_no_stories"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:textColor="@color/textLight"
+                android:text="@string/no_content_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/stories_list"
+                android:padding="16dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="@string/title_events"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/msg_no_events"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:textColor="@color/textLight"
+                android:text="@string/no_content_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/events_list"
+                android:padding="16dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/fab_bookmark"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:elevation="8dp"
+        android:scaleType="center"
+        app:maxImageSize="50dp"
+        android:src="@drawable/ic_capt_white"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

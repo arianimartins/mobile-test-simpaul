@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sim;Paul Marvel</string>
+
+    <string name="no_content_stories">No stories to list</string>
+    <string name="no_content_comics">No comics to list</string>
+    <string name="no_content_events">No events to list</string>
+    <string name="no_content_series">No series to list</string>
+    <string name="no_content_description">No description to show</string>
+
+    <string name="error_connection">Check your internet connection</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="title_comics">Comics</string>
+    <string name="title_series">Series</string>
+    <string name="title_stories">Stories</string>
+    <string name="title_events">Events</string>
+    <string name="bookmark">Save</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ed1d34</color>
+    <color name="colorPrimaryDark">#001427</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+
+    <color name="white">#fff</color>
+    <color name="textColor">#252525</color>
+    <color name="textLight">#747474</color>
+    <color name="menuSelectedBack">#E0E0E0</color>
+</resources>
